@@ -1,5 +1,7 @@
 # CrisprGuard
 
+[![Live Demo](https://img.shields.io/badge/▶_Live_Demo-emiresti.github.io/crisprguard-10b981?style=for-the-badge&labelColor=0b1022)](https://emiresti.github.io/crisprguard/) [![CI](https://github.com/emiresti/crisprguard/actions/workflows/ci.yml/badge.svg)](https://github.com/emiresti/crisprguard/actions/workflows/ci.yml)
+
 **Zero-dependency Cas9/Cas12a CRISPR Guide RNA Designer, CFD Off-Target Kinetics Engine & Bae MMEJ Microhomology Frameshift Predictor**
 
 CrisprGuard is a pure Python 3.10+ bioinformatics toolkit, CLI, and dark-lab interactive web workbench for designing high-efficiency, high-specificity CRISPR-Cas9 and CRISPR-Cas12a guide RNAs while predicting post-cleavage DNA repair frameshift outcomes.
