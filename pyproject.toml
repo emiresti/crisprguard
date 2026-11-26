@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crisprguard"
+version = "1.0.0"
+description = "Zero-dependency Cas9/Cas12a CRISPR guide RNA designer, CFD off-target kinetics engine, and Bae MMEJ microhomology frameshift predictor with CLI and interactive web laboratory."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Muhammed Emir Esti", email = "muhammedemiresti3@gmail.com" }
+]
+keywords = [
+    "crispr",
+    "cas9",
+    "cas12a",
+    "sgrna",
+    "crrna",
+    "bioinformatics",
+    "off-target",
+    "cfd",
+    "mmej",
+    "microhomology",
+    "gene-editing",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = []
+
+[project.scripts]
+crisprguard = "crisprguard.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+crisprguard = ["web/static/*"]

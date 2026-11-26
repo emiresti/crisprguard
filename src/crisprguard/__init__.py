@@ -1,0 +1,65 @@
+"""CrisprGuard: Cas9/Cas12a Guide RNA Designer, CFD Off-Target Kinetics & MMEJ Predictor."""
+
+from crisprguard.design import (
+    ENZYME_SPECS,
+    DesignReport,
+    EnzymeSpec,
+    GuideCandidate,
+    MMEJPattern,
+    MMEJResult,
+    OnTargetScoreDetail,
+    design_guides,
+    format_guides_csv,
+    format_guides_fasta,
+    gc_content_percent,
+    predict_mmej,
+    score_on_target,
+)
+from crisprguard.offtarget import (
+    MismatchDetail,
+    OffTargetHit,
+    OffTargetSummary,
+    clean_dna,
+    normalize_enzyme,
+    pam_activity_score,
+    parse_fasta,
+    reverse_complement,
+    scan_offtargets,
+    score_cfd_mismatch,
+    score_offtarget_cfd,
+)
+from crisprguard.samples import SAMPLES, SamplePreset, get_sample, list_samples
+
+__version__ = "1.0.0"
+
+__all__ = [
+    "__version__",
+    "ENZYME_SPECS",
+    "SAMPLES",
+    "DesignReport",
+    "EnzymeSpec",
+    "GuideCandidate",
+    "MMEJPattern",
+    "MMEJResult",
+    "MismatchDetail",
+    "OffTargetHit",
+    "OffTargetSummary",
+    "OnTargetScoreDetail",
+    "SamplePreset",
+    "clean_dna",
+    "design_guides",
+    "format_guides_csv",
+    "format_guides_fasta",
+    "gc_content_percent",
+    "get_sample",
+    "list_samples",
+    "normalize_enzyme",
+    "pam_activity_score",
+    "parse_fasta",
+    "predict_mmej",
+    "reverse_complement",
+    "scan_offtargets",
+    "score_cfd_mismatch",
+    "score_offtarget_cfd",
+    "score_on_target",
+]
